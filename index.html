@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CineLog: um catálogo pessoal de filmes assistidos, favoritos e descobertas." />
+    <link rel="icon" href="img/Oculos3D.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CineLog — Filmes que já assisti</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="CineLog, início"><span class="brand-mark">◉</span><span>Cine<strong>Log</strong></span></a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#catalogo">Catálogo</a><a href="#sobre">Sobre o projeto</a>
+      </nav>
+      <a class="header-action" href="#catalogo">Explorar filmes <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="inicio">
+      <section class="hero">
+        <img class="hero-image" src="img/Banner.png" alt="Banner cinematográfico do catálogo" />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="kicker">DIÁRIO DE SESSÕES · 2026</p>
+          <h1>Filmes que<br /><em>ficam.</em></h1>
+          <p class="hero-copy">Uma coleção pessoal de histórias que atravessaram a tela — dos clássicos do faroeste às aventuras do multiverso.</p>
+          <a class="button button-primary" href="#catalogo">Ver catálogo <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-meta"><span>11 títulos</span><span>·</span><span>Clássicos & favoritos</span></div>
+      </section>
+
+      <section class="catalog-section" id="catalogo">
+        <div class="section-topline"><span class="eyebrow">01 — COLEÇÃO</span><span class="result-count" aria-live="polite">11 filmes</span></div>
+        <div class="catalog-heading"><div><h2>Uma sessão<br /><em>para cada humor.</em></h2></div><p>Escolha um título, filtre por gênero ou simplesmente passeie pela coleção.</p></div>
+        <div class="catalog-tools">
+          <label class="search-box"><span aria-hidden="true">⌕</span><span class="sr-only">Buscar filme</span><input id="search" type="search" placeholder="Buscar por título..." autocomplete="off" /></label>
+          <div class="filters" role="group" aria-label="Filtrar filmes"><button class="filter is-active" type="button" data-filter="todos">Todos</button><button class="filter" type="button" data-filter="ação">Ação</button><button class="filter" type="button" data-filter="aventura">Aventura</button><button class="filter" type="button" data-filter="clássico">Clássicos</button></div>
+        </div>
+
+        <div class="movie-grid">
+          <article class="movie-card featured" data-title="Por Uns Dólares a Mais" data-genre="clássico" data-number="01" data-image="img/PorUnsDolaresaMais.jpg" data-description="Dois caçadores de recompensas rivais unem forças a contragosto para capturar El Indio, um perigoso bandido que planeja assaltar o banco de El Paso." data-meta="Faroeste · 1965">
+            <div class="poster"><img src="img/PorUnsDolaresaMais.jpg" alt="Pôster de Por Uns Dólares a Mais" loading="lazy" /><span class="poster-number">01</span><button class="details-button" type="button">Ver detalhes <span>↗</span></button></div><div class="movie-info"><span class="movie-genre">FAROESTE · 1965</span><h3>Por Uns<br />Dólares a Mais</h3><p>Clint Eastwood e Lee Van Cleef em um duelo de estratégia, vingança e pólvora.</p></div>
+          </article>
+          <article class="movie-card" data-title="Três Homens em Conflito" data-genre="clássico" data-number="02" data-image="img/webdes.png" data-description="Três pistoleiros buscam uma fortuna em ouro confederado durante a Guerra Civil Americana, em uma obra-prima de Sergio Leone." data-meta="Faroeste · 1966"><div class="poster"><img src="img/webdes.png" alt="Pôster de Três Homens em Conflito" loading="lazy" /><span class="poster-number">02</span><button class="details-button" type="button">Ver detalhes <span>↗</span></button></div><div class="movie-info"><span class="movie-genre">FAROESTE · 1966</span><h3>Três Homens<br />em Conflito</h3><p>Uma fortuna, três rivais e o duelo final mais icônico do cinema.</p></div></article>
+          <article class="movie-card" data-title="Batman: O Cavaleiro das Trevas" data-genre="ação" data-number="03" data-image="img/Batman.png" data-description="Batman, Gordon e Harvey Dent enfrentam o caos trazido pelo Coringa enquanto Gotham testa seus limites morais." data-meta="Ação · 2008"><div class="poster"><img src="img/Batman.png" alt="Pôster de Batman: O Cavaleiro das Trevas" loading="lazy" /><span class="poster-number">03</span><button class="details-button" type="button">Ver detalhes <span>↗</span></button></div><div class="movie-info"><span class="movie-genre">AÇÃO · 2008</span><h3>O Cavaleiro<br />das Trevas</h3><p>Gotham enfrenta o caos e o mais imprevisível dos inimigos.</p></div></article>
+          <article class="movie-card" data-title="Kubo e as Cordas Mágicas" data-genre="aventura" data-number="04" data-image="img/Kubo.jpg" data-description="Para salvar sua família, Kubo precisa encontrar a armadura mágica de seu pai, um lendário samurai." data-meta="Animação · 2016"><div class="poster"><img src="img/Kubo.jpg" alt="Pôster de Kubo e as Cordas Mágicas" loading="lazy" /><span class="poster-number">04</span><button class="details-button" type="button">Ver detalhes <span>↗</span></button></div><div class="movie-info"><span class="movie-genre">AVENTURA · 2016</span><h3>Kubo e as<br />Cordas Mágicas</h3><p>Origamis, memórias e uma jornada visualmente encantadora.</p></div></article>
+          <article class="movie-card" data-title="Um Pistoleiro Chamado Papaco" data-genre="clássico" data-number="05" data-image="img/UmPistoleiroChamadoPapaco.jpg" data-description="Um pistoleiro chega a uma cidade arrastando um caixão que guarda uma mercadoria cobiçada por criminosos locais." data-meta="Comédia · 1986"><div class="poster"><img src="img/UmPistoleiroChamadoPapaco.jpg" alt="Pôster de Um Pistoleiro Chamado Papaco" loading="lazy" /><span class="poster-number">05</span><button class="details-button" type="button">Ver detalhes <span>↗</span></button></div><div class="movie-info"><span class="movie-genre">CULT · 1986</span><h3>Um Pistoleiro<br />Chamado Papaco</h3><p>Faroeste brasileiro, humor trash e uma aventura absolutamente singular.</p></div></article>
+          <article class="movie-card" data-title="John Wick" data-genre="ação" data-number="06" data-image="img/JohnWick.jpg" data-description="Após perder o último elo com sua esposa, um ex-assassino de aluguel retorna à ativa em uma busca implacável por vingança." data-meta="Ação · 2014"><div class="poster"><img src="img/JohnWick.jpg" alt="Pôster de John Wick" loading="lazy" /><span class="poster-number">06</span><button class="details-button" type="button">Ver detalhes <span>↗</span></button></div><div class="movie-info"><span class="movie-genre">AÇÃO · 2014</span><h3>John<br />Wick</h3><p>Coreografias precisas, neon e uma vingança sem freio.</p></div></article>
+          <article class="movie-card" data-title="Homem-Aranha" data-genre="aventura" data-number="07" data-image="img/Miranha.jpg" data-description="Peter Parker ganha poderes após ser picado por uma aranha e aprende que grandes poderes trazem grandes responsabilidades." data-meta="Aventura · 2002"><div class="poster"><img src="img/Miranha.jpg" alt="Pôster de Homem-Aranha" loading="lazy" /><span class="poster-number">07</span><button class="details-button" type="button">Ver detalhes <span>↗</span></button></div><div class="movie-info"><span class="movie-genre">AVENTURA · 2002</span><h3>Homem-<br />Aranha</h3><p>Uma origem heroica sobre escolhas, responsabilidade e coragem.</p></div></article>
+          <article class="movie-card" data-title="Homem-Aranha 2" data-genre="ação" data-number="08" data-image="img/Miranha2.jpg" data-description="Peter tenta equilibrar sua vida pessoal e heroica enquanto enfrenta o Doutor Octopus." data-meta="Ação · 2004"><div class="poster"><img src="img/Miranha2.jpg" alt="Pôster de Homem-Aranha 2" loading="lazy" /><span class="poster-number">08</span><button class="details-button" type="button">Ver detalhes <span>↗</span></button></div><div class="movie-info"><span class="movie-genre">AÇÃO · 2004</span><h3>Homem-<br />Aranha 2</h3><p>O desafio de encontrar equilíbrio quando tudo começa a desabar.</p></div></article>
+          <article class="movie-card" data-title="Homem-Aranha 3" data-genre="ação" data-number="09" data-image="img/Miranha3.jpg" data-description="Um simbionte alienígena desperta um lado sombrio de Peter enquanto ele enfrenta o Homem-Areia e Venom." data-meta="Ação · 2007"><div class="poster"><img src="img/Miranha3.jpg" alt="Pôster de Homem-Aranha 3" loading="lazy" /><span class="poster-number">09</span><button class="details-button" type="button">Ver detalhes <span>↗</span></button></div><div class="movie-info"><span class="movie-genre">AÇÃO · 2007</span><h3>Homem-<br />Aranha 3</h3><p>O herói encara seus próprios impulsos e o lado mais sombrio.</p></div></article>
+          <article class="movie-card" data-title="Homem-Aranha no Aranhaverso" data-genre="aventura" data-number="10" data-image="img/MiranhaVerso.jpg" data-description="Miles Morales conhece versões do herói vindas de dimensões paralelas e precisa salvar o multiverso." data-meta="Animação · 2018"><div class="poster"><img src="img/MiranhaVerso.jpg" alt="Pôster de Homem-Aranha no Aranhaverso" loading="lazy" /><span class="poster-number">10</span><button class="details-button" type="button">Ver detalhes <span>↗</span></button></div><div class="movie-info"><span class="movie-genre">AVENTURA · 2018</span><h3>Aranhaverso</h3><p>Uma explosão de estilos, dimensões e possibilidades heroicas.</p></div></article>
+          <article class="movie-card" data-title="Flash Ponto de Ignição" data-genre="ação" data-number="11" data-image="img/FlashFilmeBom.jpg" data-description="Um policial de Hong Kong tenta derrubar uma perigosa máfia vietnamita enquanto protege seu amigo infiltrado." data-meta="Ação · 2007"><div class="poster"><img src="img/FlashFilmeBom.jpg" alt="Pôster de Flash Ponto de Ignição" loading="lazy" /><span class="poster-number">11</span><button class="details-button" type="button">Ver detalhes <span>↗</span></button></div><div class="movie-info"><span class="movie-genre">AÇÃO · 2007</span><h3>Flash: Ponto<br />de Ignição</h3><p>Polícia, máfia e combate corpo a corpo em alta voltagem.</p></div></article>
+        </div>
+        <p class="empty-state" hidden>Nenhum filme encontrado. Tente outro título ou categoria.</p>
+      </section>
+
+      <section class="about" id="sobre"><span class="eyebrow">02 — SOBRE O PROJETO</span><div><h2>Assistir também<br /><em>é lembrar.</em></h2><p>O CineLog é um arquivo pessoal de filmes assistidos — uma forma de guardar as histórias que merecem uma segunda sessão e compartilhar boas descobertas.</p></div></section>
+    </main>
+    <footer class="footer"><a class="brand" href="#inicio"><span class="brand-mark">◉</span><span>Cine<strong>Log</strong></span></a><span>Uma coleção pessoal de cinema.</span><span>© 2026</span></footer>
+
+    <dialog class="movie-modal" id="movie-modal"><button class="modal-close" type="button" aria-label="Fechar detalhes">×</button><div class="modal-layout"><img id="modal-image" src="" alt="" /><div><span id="modal-meta" class="movie-genre"></span><span id="modal-number" class="modal-number"></span><h2 id="modal-title"></h2><p id="modal-description"></p><button class="button button-primary modal-dismiss" type="button">Fechar</button></div></div></dialog>
+    <script src="script.js"></script>
+  </body>
+</html>
